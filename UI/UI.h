@@ -40,6 +40,8 @@ class UI
 		//If you want to change the menu items order, just change the order here
 		ITM_RES,		//Resistor item in menu
 		//TODO: Add more items names here
+		ITM_BULB,
+		ITM_SWI,
 		ITM_EXIT,		//Exit item
 	
 		ITM_DSN_CNT		//no. of design menu items ==> This should be the last line in this enum
@@ -107,6 +109,8 @@ public:
 	// Draws a resistor
 	void DrawResistor(const GraphicsInfo &r_GfxInfo, bool selected = false) const;
 	///TODO: Make similar functions for drawing all other components, connections, .. etc
+	void DrawBulb(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
+	void DrawSwitch(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
 
 	// Draws Connection
 	void DrawConnection(const GraphicsInfo &r_GfxInfo, bool selected = false) const;
